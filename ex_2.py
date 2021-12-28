@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 def benchmark(func):
     import time
 
@@ -15,5 +18,6 @@ def fetch_webpage(url):
     webpage = requests.get(url)
     return webpage.text
 
-webpage = fetch_webpage('https://google.com')
-print(webpage)
+if __name__ == "__main__":
+    webpage = fetch_webpage('https://google.com')
+    print(webpage)
